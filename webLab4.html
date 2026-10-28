@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Todo App</title>
+  <link rel="stylesheet" href="webLab4.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Todo App</h1>
+
+    <div class="add-row">
+      <input id="todo-input" type="text" placeholder="What needs doing?">
+      <button id="add-btn">Add</button>
+    </div>
+
+    <div class="tools">
+      <small>Tip: double-click a todo to edit. Press Enter to save.</small>
+      <div id="filters">
+        <button data-filter="all" class="active">All</button>
+        <button data-filter="active">Active</button>
+        <button data-filter="completed">Completed</button>
+      </div>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <div class="footer">
+      <span id="count">0 items left</span>
+      <div>
+        <button id="clear-completed">Clear completed</button>
+        <button id="clear-all">Clear all</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="webLab4.js"></script>
+</body>
+</html>
